@@ -1,0 +1,10 @@
+/* src/app/music/music.component.css */
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 10;
+}
