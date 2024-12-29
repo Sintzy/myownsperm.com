@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { BackgroundImageComponent } from './background-image/background-image.component';
+import { MusicComponent } from './music/music.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [BackgroundImageComponent, MusicComponent],
+  template: `
+    <app-background-image>
+      <app-music></app-music>
+    </app-background-image>
+    <a href="https://leiriaindustries.com">leiriaIndustries.com</a>
+  `,
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myownspermangular';
+  title = 'my own sperm dot com';
 }
